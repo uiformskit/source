@@ -37,7 +37,7 @@ jobs:
           for LIB in "${LIBS[@]}"; do
             echo "Publishing $LIB..."
             cd dist/libs/$LIB
-            npm publish
+            npm publish --provenance --access public
             cd -
           done
         env:
