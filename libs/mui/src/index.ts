@@ -1,1 +1,1 @@
-export * from './lib/mui';
+export * from './lib/MuiUIComponents';

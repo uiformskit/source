@@ -1,1 +1,1 @@
-export * from './lib/antd';
+export * from './lib/AntDesignUIComponents';

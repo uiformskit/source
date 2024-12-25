@@ -6,7 +6,15 @@
   "exports": {
     ".": {
       "import": "./index.mjs",
-      "require": "./index.js"
+      "require": "./index.js",
+      "types": "./index.d.ts"
     }
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "@mui/material": "^6.2.1",
+    "@mui/x-date-pickers": "^7.23.3",
+    "@uiformskit/core": "^1.0.0"
   }
 }
