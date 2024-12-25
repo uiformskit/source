@@ -10,5 +10,8 @@
       "types": "./index.d.ts"
     },
      "./style.css": "./style.css"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

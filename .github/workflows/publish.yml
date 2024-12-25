@@ -36,7 +36,6 @@ jobs:
           LIBS=("core" "antd" "mui")
           for LIB in "${LIBS[@]}"; do
             echo "Publishing $LIB..."
-            echo "$secrets.NPM_TOKEN"
             cd dist/libs/$LIB
             npm publish --provenance --access public
             cd -

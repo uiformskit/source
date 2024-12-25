@@ -16,5 +16,8 @@
     "@mui/material": "^6.2.1",
     "@mui/x-date-pickers": "^7.23.3",
     "@uiformskit/core": "^1.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
