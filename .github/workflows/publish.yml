@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+          registry-url: 'https://registry.npmjs.org'
 
       - run: npm ci --legacy-peer-deps
 
@@ -33,12 +34,14 @@ jobs:
       - name: Publish Libraries
         if: github.ref == 'refs/heads/master'
         run: |
+          git config --global user.name 'akalanka.dissanayake'
+          git config --global user.email 'akalanka.n.dissanayake@gmail.com'
           LIBS=("core" "antd" "mui")
           for LIB in "${LIBS[@]}"; do
             echo "Publishing $LIB..."
             cd dist/libs/$LIB
-            npm publish --provenance --access public
+            npm publish
             cd -
           done
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
