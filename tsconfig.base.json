@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@uiformskit/antd": ["libs/antd/src/index.ts"],
+      "@uiformskit/core": ["libs/core/src/index.ts"],
+      "@uiformskit/mui": ["libs/mui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
