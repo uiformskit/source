@@ -1,6 +1,6 @@
 {
   "name": "@uiformskit/mui",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "./index.js",
   "types": "./index.d.ts",
   "exports": {
@@ -15,7 +15,7 @@
     "react-dom": "^18.0.0",
     "@mui/material": "^6.2.1",
     "@mui/x-date-pickers": "^7.23.3",
-    "@uiformskit/core": "^1.0.0"
+    "@uiformskit/core": "^0.0.1"
   },
   "publishConfig": {
     "access": "public"
