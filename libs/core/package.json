@@ -1,15 +1,19 @@
 {
   "name": "@uiformskit/core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./index.js",
   "types": "./index.d.ts",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
   "exports": {
     ".": {
       "import": "./index.mjs",
       "require": "./index.js",
       "types": "./index.d.ts"
     },
-     "./style.css": "./style.css"
+    "./style.css": "./style.css"
   },
   "publishConfig": {
     "access": "public"

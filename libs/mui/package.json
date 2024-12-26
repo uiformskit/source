@@ -1,6 +1,6 @@
 {
   "name": "@uiformskit/mui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./index.js",
   "types": "./index.d.ts",
   "exports": {
@@ -11,6 +11,9 @@
     }
   },
   "dependencies": {
+    "dayjs": "^1.11.0"
+  },
+  "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "@mui/material": "^6.2.1",
