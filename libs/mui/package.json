@@ -11,6 +11,9 @@
     }
   },
   "dependencies": {
+    "dayjs": "^1.11.0"
+  },
+  "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "@mui/material": "^6.2.1",
